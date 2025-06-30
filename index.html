@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Music Player</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Music grid -->
+<div id="music-grid" class="music-grid"></div>
+
+<!-- Bottom playback control bar -->
+<div class="bottom-player">
+    <img id="global-cover" src="images/img1.jpg" alt="Cover" />
+    <div class="now-playing">
+        <h3 id="global-title">Title</h3>
+        <p id="global-artist">Artist</p>
+        <p><strong>Genre:</strong> <span id="song-genre">-</span></p>
+        <p><strong>Moods:</strong> <span id="song-moods">-</span></p>
+        <p><strong>Duration:</strong> <span id="song-duration">0:00</span></p>
+    </div>
+
+    <div class="controls">
+        <button id="global-prev" aria-label="Previous">&#9664;</button>
+        <button id="global-play" aria-label="Play/Pause">&#9654;</button>
+        <button id="global-next" aria-label="Next">&#9654;</button>
+    </div>
+
+    <div class="extras">
+        <input type="range" id="global-progress" min="0" max="100" step="0.1" />
+        <div class="time-display">
+        <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+    </div>
+        <input type="range" id="global-volume" min="0" max="1" step="0.01" />
+        <button id="like-btn" aria-label="Like">❤️</button>
+        <button id="bookmark-btn" aria-label="Bookmark">🔖</button>
+        <button id="download-btn" aria-label="Download">⬇️</button>
+        <button id="theme-toggle" aria-label="Toggle Theme">🌞</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
