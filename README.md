@@ -29,15 +29,25 @@ A sleek and interactive web-based music player featuring a beautiful 3x3 grid la
 ## 📁 Folder Structure
 
 music-player/
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 ├── images/
+
 │ ├── img1.jpg
+
 │ └── ... img15.jpg
+
 ├── musics/
+
 │ ├── music1.mp3
+
 │ └── ... music15.mp3
+
 └── README.md
 
 
